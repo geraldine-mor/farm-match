@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A simple matching memory card game with farm themed cards">
+        <meta name="keywords" content="matching game, game for kids, toddlers game, farm game, memory game">
+        <title>Farm Match</title>
+
+        <!--Favicon created using favicon.io, icon from flaticon.com -->
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+        <link rel="manifest" href="assets/favicon/site.webmanifest">
+
+        <!--Bootstrap CSS-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous">
+        
+        <!--Custom CSS-->
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+
+    <body class="homepage d-flex flex-column">
+        <header>
+            <!-- Title -->
+            <div class="container text-center mt-2">
+                <h1 class="main-title">Farm Match Memory Card Game</h1>
+                <p class="lead intro-text">Flip the cards and find the matching pairs!</p>
+            </div>
+        </header>
+
+        <main>
+        <!--Game area-->
+        <div id="game-container" class="container my-auto">
+            <div class="row justify-content-evenly gy-2">
+                <div id="card1-flip" class="col-4 col-md-3 card-flip game-card" data-num="one">
+                    <div id="card1-flip-inner" class="card-flip-inner">
+                        <div id="card1-flip-front" class="card-flip-front">
+                            <img id="card1-back" src="assets/images/card-back.webp" alt="Back of a playing card">
+                        </div>
+                        <div id="card1-flip-back" class="card-flip-back">
+                            <img id="card1-front" src="assets/images/barn.webp" alt="An image of a barn">
+                        </div>
+                    </div>
+                </div>
+                <div id="card2-flip" class="col-4 col-md-3 card-flip game-card" data-num="two">
+                    <div id="card2-flip-inner" class="card-flip-inner">
+                        <div id="card2-flip-front" class="card-flip-front">
+                            <img id="card2-back" src="assets/images/card-back.webp" alt="Back of a playing card">
+                        </div>
+                        <div id="card2-flip-back" class="card-flip-back">
+                            <img id="card2-front" src="assets/images/barn.webp" alt="An image of a barn">
+                        </div>
+                    </div>
+                </div>
+                <div id="card3-flip" class="col-4 col-md-3 card-flip game-card" data-num="three">
+                    <div id="card3-flip-inner" class="card-flip-inner">
+                        <div id="card3-flip-front" class="card-flip-front">
+                            <img id="card3-back" src="assets/images/card-back.webp" alt="Back of a playing card">
+                        </div>
+                        <div id="card3-flip-back" class="card-flip-back">
+                            <img id="card3-front" src="assets/images/barn.webp" alt="An image of a barn">
+                        </div>
+                    </div>
+                </div>
+                <div id="card4-flip" class="col-4 col-md-3 card-flip game-card" data-num="four">
+                    <div id="card4-flip-inner" class="card-flip-inner">
+                        <div id="card4-flip-front" class="card-flip-front">
+                            <img id="card4-back" src="assets/images/card-back.webp" alt="Back of a playing card">
+                        </div>
+                        <div id="card4-flip-back" class="card-flip-back">
+                            <img id="card4-front" src="assets/images/barn.webp" alt="An image of a barn">
+                        </div>
+                    </div>
+                </div>
+                <div id="card5-flip" class="col-4 col-md-3 card-flip game-card" data-num="five">
+                    <div id="card5-flip-inner" class="card-flip-inner">
+                        <div id="card5-flip-front" class="card-flip-front">
+                            <img id="card5-back" src="assets/images/card-back.webp" alt="Back of a playing card">
+                        </div>
+                        <div id="card5-flip-back" class="card-flip-back">
+                            <img id="card5-front" src="assets/images/barn.webp" alt="An image of a barn">
+                        </div>
+                    </div>
+                </div>
+                <div id="card6-flip" class="col-4 col-md-3 card-flip game-card" data-num="six">
+                    <div id="card6-flip-inner" class="card-flip-inner">
+                        <div id="card6-flip-front" class="card-flip-front">
+                            <img id="card6-back" src="assets/images/card-back.webp" alt="Back of a playing card">
+                        </div>
+                        <div id="card6-flip-back" class="card-flip-back">
+                            <img id="card6-front" src="assets/images/barn.webp" alt="An image of a barn">
+                        </div>
+                    </div>
+                </div>
+                <div id="card7-flip" class="col-4 col-md-3 card-flip game-card" data-num="seven">
+                    <div id="card7-flip-inner" class="card-flip-inner">
+                        <div id="card7-flip-front" class="card-flip-front">
+                            <img id="card7-back" src="assets/images/card-back.webp" alt="Back of a playing card">
+                        </div>
+                        <div id="card7-flip-back" class="card-flip-back">
+                            <img id="card7-front" src="assets/images/barn.webp" alt="An image of a barn">
+                        </div>
+                    </div>
+                </div>
+                <div id="card8-flip" class="col-4 col-md-3 card-flip game-card" data-num="eight">
+                    <div id="card8-flip-inner" class="card-flip-inner">
+                        <div id="card8-flip-front" class="card-flip-front">
+                            <img id="card8-back" src="assets/images/card-back.webp" alt="Back of a playing card">
+                        </div>
+                        <div id="card8-flip-back" class="card-flip-back">
+                            <img id="card8-front" src="assets/images/barn.webp" alt="An image of a barn">
+                        </div>
+                    </div>
+                </div>
+                <div id="card9-flip" class="col-4 col-md-3 card-flip game-card" data-num="nine">
+                    <div id="card9-flip-inner" class="card-flip-inner">
+                        <div id="card9-flip-front" class="card-flip-front">
+                            <img id="card9-back" src="assets/images/card-back.webp" alt="Back of a playing card">
+                        </div>
+                        <div id="card9-flip-back" class="card-flip-back">
+                            <img id="card9-front" src="assets/images/barn.webp" alt="An image of a barn">
+                        </div>
+                    </div>
+                </div>
+                <div id="card10-flip" class="col-4 col-md-3 card-flip game-card" data-num="ten">
+                    <div id="card10-flip-inner" class="card-flip-inner">
+                        <div id="card10-flip-front" class="card-flip-front">
+                            <img id="card10-back" src="assets/images/card-back.webp" alt="Back of a playing card">
+                        </div>
+                        <div id="card10-flip-back" class="card-flip-back">
+                            <img id="card10-front" src="assets/images/barn.webp" alt="An image of a barn">
+                        </div>
+                    </div>
+                </div>
+                <div id="card11-flip" class="col-4 col-md-3 card-flip game-card" data-num="eleven">
+                    <div id="card11-flip-inner" class="card-flip-inner">
+                        <div id="card11-flip-front" class="card-flip-front">
+                            <img id="card11-back" src="assets/images/card-back.webp" alt="Back of a playing card">
+                        </div>
+                        <div id="card11-flip-back" class="card-flip-back">
+                            <img id="card11-front" src="assets/images/barn.webp" alt="An image of a barnf">
+                        </div>
+                    </div>
+                </div>
+                <div id="card12-flip" class="col-4 col-md-3 card-flip game-card" data-num="twelve">
+                    <div id="card12-flip-inner" class="card-flip-inner">
+                        <div id="card12-flip-front" class="card-flip-front">
+                            <img id="card12-back" src="assets/images/card-back.webp" alt="Back of a playing card">
+                        </div>
+                        <div id="card12-flip-back" class="card-flip-back">
+                            <img id="card12-front" src="assets/images/barn.webp" alt="An image of a barn">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button id="game-reset" class="btn btn-primary">Play Again</button>
+            <!--Win modal-->
+        </div>
+
+        <div id="win-modal" class="d-flex flex-column hidden">
+            <div id="modal-text" class="d-flex flex-column m-auto">
+                <h2 class="text-center my-auto">Well Done you found all the pairs!!</h2>
+            </div>
+        </div>
+    </main>
+        <footer class="christmas-footer">Made with ❤️ for Tadhg from Mammy </footer>
+
+        <!--Bootstrap JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+
+        <!--Custom JS-->
+        <script src="assets/js/script.js"></script>
+    </body>
+
+</html>
